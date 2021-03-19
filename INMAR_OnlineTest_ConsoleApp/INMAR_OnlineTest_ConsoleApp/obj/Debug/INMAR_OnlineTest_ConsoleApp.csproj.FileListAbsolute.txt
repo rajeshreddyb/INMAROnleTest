@@ -1,7 +1,0 @@
-C:\Users\Jaswith\source\repos\INMAR_OnlineTest_ConsoleApp\INMAR_OnlineTest_ConsoleApp\bin\Debug\INMAR_OnlineTest_ConsoleApp.exe.config
-C:\Users\Jaswith\source\repos\INMAR_OnlineTest_ConsoleApp\INMAR_OnlineTest_ConsoleApp\bin\Debug\INMAR_OnlineTest_ConsoleApp.exe
-C:\Users\Jaswith\source\repos\INMAR_OnlineTest_ConsoleApp\INMAR_OnlineTest_ConsoleApp\bin\Debug\INMAR_OnlineTest_ConsoleApp.pdb
-C:\Users\Jaswith\source\repos\INMAR_OnlineTest_ConsoleApp\INMAR_OnlineTest_ConsoleApp\obj\Debug\INMAR_OnlineTest_ConsoleApp.csprojAssemblyReference.cache
-C:\Users\Jaswith\source\repos\INMAR_OnlineTest_ConsoleApp\INMAR_OnlineTest_ConsoleApp\obj\Debug\INMAR_OnlineTest_ConsoleApp.csproj.CoreCompileInputs.cache
-C:\Users\Jaswith\source\repos\INMAR_OnlineTest_ConsoleApp\INMAR_OnlineTest_ConsoleApp\obj\Debug\INMAR_OnlineTest_ConsoleApp.exe
-C:\Users\Jaswith\source\repos\INMAR_OnlineTest_ConsoleApp\INMAR_OnlineTest_ConsoleApp\obj\Debug\INMAR_OnlineTest_ConsoleApp.pdb
