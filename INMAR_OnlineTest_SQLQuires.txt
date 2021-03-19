@@ -1,31 +1,33 @@
-1.)select * from customer where name like 'Joe%'
+1.)--all the customers whose name begins with "Joe"
+select * from customer where name like 'Raj%'
 
-
-2.)select Product.Name from OrderProduct op
-join Order o
+2.)--all the product names ordered by customer "Joe" after '11/1/2016'
+select p.[Name] from OrderProduct op  
+join [Order] o
 on o.OrderId = op.OrderId
 join product p 
-on p.ProductId = o.op.ProductId
+on p.ProductId = op.ProductId
 join Customer c
 on o.CustomerId = c.CustomerId
-where c.Name like 'Joe%' and convert(varchar, o.CreatedAt) > '11/1/2016'
+where c.Name like 'Raj%' and convert(date, o.CreatedAt) < '2021-03-20'
 
-
-3.)select sum(p.Price) from OrderProduct op
-join Order o
+3.)--the total amount spend by customer "Joe"
+select sum(p.Price) from OrderProduct op
+join [Order] o
 on o.OrderId = op.OrderId
 join product p 
-on p.ProductId = o.op.ProductId
+on p.ProductId = op.ProductId
 join Customer c
 on o.CustomerId = c.CustomerId
-Group by c.Name like 'Joe%' 
+where c.[Name] like 'Raj%'
 
-
-4.)select c.Name, sum(o.OrderId),ProductId from OrderProduct op
-join Order o
+4.)--all the customer names and count of their orders for orders containing more than one product
+select c.Name, sum(o.OrderId),p.ProductId from OrderProduct op
+join [Order] o
 on o.OrderId = op.OrderId
 join product p 
-on p.ProductId = o.op.ProductId
+on p.ProductId = op.ProductId
 join Customer c
 on o.CustomerId = c.CustomerId
+Group by p.ProductId,c.Name
 Having (p.ProductId) > 1
