@@ -1,0 +1,31 @@
+1.)select * from customer where name like 'Joe%'
+
+
+2.)select Product.Name from OrderProduct op
+join Order o
+on o.OrderId = op.OrderId
+join product p 
+on p.ProductId = o.op.ProductId
+join Customer c
+on o.CustomerId = c.CustomerId
+where c.Name like 'Joe%' and convert(varchar, o.CreatedAt) > '11/1/2016'
+
+
+3.)select sum(p.Price) from OrderProduct op
+join Order o
+on o.OrderId = op.OrderId
+join product p 
+on p.ProductId = o.op.ProductId
+join Customer c
+on o.CustomerId = c.CustomerId
+Group by c.Name like 'Joe%' 
+
+
+4.)select c.Name, sum(o.OrderId),ProductId from OrderProduct op
+join Order o
+on o.OrderId = op.OrderId
+join product p 
+on p.ProductId = o.op.ProductId
+join Customer c
+on o.CustomerId = c.CustomerId
+Having (p.ProductId) > 1
